@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <title>Whirlpool Monitor</title>
+  </head>
+
+  <body class="bg-[#F5F2F2]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3045_RC01/embed_loader.js"></script>
+
+    <script type="text/javascript"> setTimeout(function(){
+      trends.embed.renderExploreWidgetTo(document.getElementById('CHART'), "TIMESERIES", {"comparisonItem":[{"keyword":"Geladeira","geo":"BR-SP","time":"today 12-m"},{"keyword":"Fogão","geo":"BR-SP","time":"today 12-m"},{"keyword":"Batedeira","geo":"BR-SP","time":"today 12-m"},{"keyword":"B Blend","geo":"BR-SP","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=BR-SP&q=Geladeira,Fog%C3%A3o,Batedeira,B%20Blend&date=today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com.br:443/trends/embed/"});
+    }, 1000)</script>
+  </body>
+</html>
